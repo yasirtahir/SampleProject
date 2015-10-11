@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/sample_Project"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/black" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edtFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="@dimen/field_margin"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/first_place_hint"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:maxLength="160"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/edtTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtFrom"
+        android:layout_marginTop="@dimen/field_margin"
+        android:background="@android:drawable/edit_text"
+        android:hint="@string/second_place_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:maxLength="160"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTo"
+        android:layout_marginTop="@dimen/field_margin"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center_vertical|start"
+        android:hint="@string/select_date"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:enabled="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/search" />
+
+    <TextView
+        android:id="@+id/btnReadMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/field_margin"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/read_me"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+</RelativeLayout>

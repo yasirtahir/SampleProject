@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sample Project</string>
+
+    <!-- Application Specific Strings -->
+    <string name="sample_Project">Sample Project</string>
+    <string name="first_place_hint">Start Place</string>
+    <string name="second_place_hint">End Place</string>
+    <string name="select_date">Date of Trip</string>
+    <string name="search">Search</string>
+    <string name="read_me"><u>Click here to Read about this application</u></string>
+</resources>
